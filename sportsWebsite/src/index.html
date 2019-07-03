@@ -4,62 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="/src/sprorts.css" rel="stylesheet" type="text/css">
+    <link href="sports.css" rel="stylesheet" type="text/css">
     <title>Document</title>
     
 </head>
 <body >
     <header>
         <div class="container">
-        <h1 class="logo"></h1>
-        <img src="../images/images.png" alt="logo" class="logo">
-        <nav>
-            <div class="dropdown">
+            <h1 class="logo"></h1>
+            <img src="../images/images.png" alt="logo" class="logo">
+            <nav>
+                <div class="dropdown">
                     <button class="dropbtn">Sports 
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                            <div class="header">
-                                    <h2>Mega Menu</h2>
-                                  </div>   
-                                  <div class="row">
-                                    <div class="column">
-                                    <h3>Sports</h3>
-                                    <ul>
-                                        <li><input name="sports" type="radio" value=""/>Badminton</li>
-                                        <li><input name="sports" type="radio" value=""/>Table Tennis</li>
-                                        <li><input name="sports" type="radio" value=""/>Soccer</li>
-                                    </ul>
-                                    </div>
-                                    <div class="column">
-                                      <h3>Game type</h3>
-                                      <ul>
-                                            <li ><input name="gameType" type="radio" value=""/>Knock Out</li>
-                                            <li ><input name="gameType" type="radio" value=""/>League</li>
-                                        </ul>
-                                    </div>
-                                    <div class="column">
-                                      <h3>Team/Players</h3>
-<!------------------------------------------------------------------------------->
-                                      <div>
-                                            <label for="number_participants">
-                                                Number of Participants
-                                            </label>
-                                            <select id="select_drop" name="number_participants" onchange="handle_dropdown()">
-                                                <option value="4">4</option>
-                                                
-                                                <option value="8">8</option>
-                                                
-                                                <option value="16">16</option>
-                                                
-                                                <option value="32">32</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                         
+                        <div class="header">
+                            <h2>Mega Menu</h2>
+                        </div>   
+                        <div class="row">
+                            <div class="column">
+                                <h3>Sports</h3>
+                                <ul>
+                                    <li><input name="sports" type="radio" value=""/>Badminton</li>
+                                    <li><input name="sports" type="radio" value=""/>Table Tennis</li>
+                                    <li><input name="sports" type="radio" value=""/>Soccer</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h3>Team/Players</h3>
+        <!------------------------------------------------------------------------------->
+                                <div>
+                                    <label for="number_participants">
+                                        Number of Participants
+                                    </label>
+                                    <select id="select_drop" name="number_participants">
+                                        <option value="4">4</option>       
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>                               
+                                        <option value="7">7</option>                                       
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        
+                                        <option value="10">10</option>
 
+                                        <option value="11">11</option>
+                                        
+                                        <option value="12">12</option>
+                                        
+                                        <option value="13">13</option>
+
+                                        <option value="14">14</option>
+                                        
+                                        <option value="15">15</option>
+
+                                        <option value="16">16</option>
+                                        
+                                        <option value="32">32</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <h3>Game type</h3>
+                                <ul>
+                                    <li ><input name="gameType" type="radio" onclick="handle_dropdown_knockout()"/>Knock Out</li>
+                                    <li ><input name="gameType" type="radio" onclick="handle_dropdown_league()"/>League</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -97,7 +112,5 @@
           
 
 </body>
-
 <script src="./index.js"></script>
 </html>
-<!-- https://www.youtube.com/watch?v=wy3A2BPClOg -->
