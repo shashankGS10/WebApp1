@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)https://www.tudelft.nl/en/x/xperience/courses-ticket-hours-projects/badminton/ -->
+<html lang="en" class=" flexbox objectfit object-fit fontsLoaded"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<!-- 
+	Ontwikkeling en TYPO3 implementatie door MaxServ B.V. (https://www.maxserv.com/)
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2019 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+
+
+
+<title>Badminton</title>
+<meta name="generator" content="TYPO3 CMS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="googlebot" content="noodp">
+<meta name="google-site-verification" content="2oiMZinSEqIIxxwJ_J_behVWxxecGecr1Lxgw7KkcYI">
+<meta name="robots" content="index, follow">
+
+
+<link rel="stylesheet" type="text/css" href="./Badminton_files/dist.style.c8586157b6.min.css" media="all">
+<style type="text/css">
+/*<![CDATA[*/
+<!-- 
+/*InlinePageCss*/
+/* specific page styles for extension "tx_cssstyledcontent" */
+	.csc-space-before-20 { margin-top: 20px !important; }
+	.csc-space-after-40 { margin-bottom: 40px !important; }
+	.csc-space-after-48 { margin-bottom: 48px !important; }
+	.csc-space-before-40 { margin-top: 40px !important; }
+/*InlineDefaultCss*/
+/* default styles for extension "tx_cookienotice" */
+	.cookieNotice {
+		position: fixed;
+		bottom: 0;
+		z-index: 1800;
+		width: 100%;
+		background-color: #000;
+		background-color: rgba(0, 0, 0, 0.8);
+		color: #fff;
+		padding: 8px;
+		opacity: 0;
+		-webkit-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+		transform: translateZ(0);
+
+		-webkit-transition: opacity 0.8s;
+		transition: opacity 0.8s;
+	}
+
+	.cookieNotice.is-visible {
+		opacity: 1;
+	}
+
+	.cookieNotice .contents {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.cookieNotice a {
+		color: #ffffff;
+		text-decoration: underline;
+	}
+
+	.cookieNotice a:hover {
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+	.cookieNotice .statement {
+		padding-top: 3px;
+		padding-bottom: 3px;
+		margin: 0 0 0 0;
+		float: left;
+	}
+
+	.cookieNotice .statement_detail {
+		clear: both;
+		display: none;
+	}
+
+	.cookieNotice .statement_detail.is-visible {
+		display: block;
+	}
+
+	.cookieNotice .agree {
+		float: right;
+		padding: 8px;
+		margin: 0 0 0 0;
+		background-color: #008000;
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+-->
+/*]]>*/
+</style>
+
+
+<script type="text/javascript" async="" src="./Badminton_files/analytics.js"></script><script type="text/javascript" async="" src="./Badminton_files/ga.js"></script><script type="text/javascript" async="" src="./Badminton_files/siteanalyze_6005654.js"></script><script async="" src="./Badminton_files/gtm.js"></script><script src="./Badminton_files/modernizr.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+/*TS_inlineJS*/
+
+var tx_lookup_results_ajaxTypeNum =1438017233;var tx_lookup_results_more_label = 'More...';
+
+
+/*]]>*/
+</script>
+
+<script type="text/javascript">			var _wfl={fonts:[
+			{family:"roboto", weight: 300},
+			{family:"roboto", weight: 100},
+			],isLoaded:function(){return document.cookie.indexOf("fontsLoaded")>=0},afterLoad:function(){document.documentElement.className+=" fontsLoaded",document.cookie="fontsLoaded=1; path=/"}};!function(){var e;if(_wfl.isLoaded())_wfl.afterLoad();else if(void 0!==document.fonts&&void 0!==window.Promise){document.fonts.onloadingerror=function(){console.error("Font error",arguments)};var o=_wfl.fonts.map(function(e){return e.family});e=document.addEventListener("DOMContentLoaded",function(){document.removeEventListener("DOMContentLoaded",e);var n=[];document.fonts.forEach(function(e){o.indexOf(e.family)>=0&&n.push(e.load())}),Promise.all(n).then(_wfl.afterLoad)})}else{var n=document.createElement("script");n.type="text/javascript",n.src=
+			"/typo3conf/ext/tud_styling/Resources/Public/JavaScript/Vendor/asyncfontloader.min.js"
+			,n.async=!0,e=window.addEventListener("DOMContentLoaded",function(){document.removeEventListener("DOMContentLoaded",e),document.head.appendChild(n)})}}();</script>     <style>     
+     /* Misc */
+     .sm-12  button {background-color:#3c4247 !important;}
+     .sm-12  button:hover {background-color:#000 !important;}
+    
+     /* News item color */
+     .fake-link{color:#3c4247 !important;}
+     .fake-link:hover{color:#000 !important;}
+     .news-summary a{color: #3c4247 !important;}
+     .news-summary:before{background-color: #3c4247 !important;}
+     
+     /* Agenda item color */
+     .agenda__item:after{background-color: #3c4247 !important;}
+      .user-content a h2, a .h3, a .user-content h2, a h3{color:#3c3c47 !important;}
+     
+     /* RSS item color */
+     .i-rss .rss a{color: #3c4247 !important;}
+     a.rss{color:#3c4247 !important;}
+     a.rss:hover{color:#000!important;text-decoration: underline;}
+     
+     /* Search bar color */
+     input[type=search]{border-color:#F2F2F2 #F2F2F2 #3c3c47 !important;}
+     .searchForm button{background-color:#3c3c47 !important;}
+     
+     /* Popup search bar color */
+     .i-search {background: #3c4247 !important; border: 1px solid #3c4247 !important;}
+     
+     /* Search results paging color */
+     .paging__first a, .paging__last a, .paging__next a, .paging__prev a{background-color: #3c4247 !important; color:#fff !important;border-color: #3c3c47 !important;}
+     .paging a.is-active, .paging a:focus, .paging a:hover{background-color: #3c3c47 !important; color:#fff !important;border-color: #3c4247 !important;}
+     
+     /* Aside column */
+     .js-toggle {background-color:#3c4247 !important;}
+     aside a{color:#3c3c47 !important;}
+     aside a:hover{color:#000 !important;}
+     .nav-aside span::after, .nav-aside a::after {background:#3c4247 !important;}
+
+     /* Social Media Style Buttons */
+     a:hover img#agendawhite, a:hover img#newswhite {filter: brightness(0) invert(1); -webkit-filter: brightness(0) invert(1); transition: filter 0.2s, -webkit-filter 0.2s; opacity: 1.0 !important; filter: alpha(opacity=100) !important;}
+     .socmed:after {border-color:transparent !important;}
+     /* .btn--icon {filter: grayscale(100%) brightness(70%) contrast(200%) saturate(0%) !important;} */
+     
+     /* Header Slider */
+     .btn--round:focus::after, .btn--round:hover::after { background-color: #3c4247 !important;}
+     .presentation__controls .slick-active{background:#def02f !important; color:#3c4247 !important;}
+     .presentation__controls li{color:#fff !important;}
+     
+     /* Header and Footer */
+     .pageFooter a:hover{color:#def02f !important;}
+     .bg-black, .bg-blue, footer {background-color: #3c4247 !important;}
+     .nav-top .nav-main__submenu::before {border-bottom-color: white !important;}
+     .nav-main__submenu a {background-color: white !important; color:#3e3f48 !important;}
+     .nav-main__submenu a:hover {color:#b2b2b2 !important;}
+     .nav-main__mainitem a:hover {color:#b2b2b2 !important;}
+     .nav-carousel{background-color: #3c4247 !important;}
+     .nav-overlay{background-color: #3c4247 !important; color:#def02f !important;}
+     .nav-bottom {background-color: #3c4247 !important;}
+     
+     /* To top / to bottom buttons */
+     .js-back_to_top .btn--icon::before {color:#3c4247 !important}
+     .js-back_to_top .btn--icon::after {border-color:#3c4247 !important}
+     
+     /* Cards (general) */
+     a:hover img{opacity: 0.7 !important; filter: alpha(opacity=70) !important; -transition-duration: 0.2s !important;}
+     
+     /* Blue cards (aanbodpagina */
+     .card--blue:after {background-color:#3c3c47 !important;}
+     .card--blue h3, .card--blue h3::before {color:#fff !important;}
+     
+     /* Purple cards */
+     .card--no_image.card--purple  .card__content, a.card.card--purple.card--horizontalHalfHeight { background-color: #def02f; color: #3c4247 !important;}
+     .card--purple.card--no_image.card--no_placeholder:not(.card--no_description) .card__content h3, a.card.card--purple.card--horizontalHalfHeight .card__content h3 { color: #fff !important; background-color: #3c4247 !important;}
+     .card--purple .h3, .card--purple .user-content h2, .card--purple h3, .user-content .card--purple h2{ color: #3c4247 important;}
+     .card--purple.card--no_image.card--no_placeholder:not(.card--no_description)::after { background-color: #ffffff !important;}
+     a.card.card--purple.card--horizontalHalfHeight .card__content h3::before {background-color: #3c4247;}
+     .card--purple:after,.card--purple::after {background-color: #3c4247 !important;}
+     .card--purple .h3, .card--purple .user-content h2, .card--purple h3, .user-content .card--purple h2{ color: #3c4247 important;}
+     .card--no_image.card--white  .card__content, a.card.card--white.card--horizontalHalfHeight  { background-color: white; color: #3c4247 !important;}
+     
+     /* White cards */
+     .card--white.card--no_image.card--no_placeholder:not(.card--no_description) .card__content h3, a.card.card--white.card--horizontalHalfHeight .card__content h3 { color: #3c4247 !important;}
+     a.card.card--white.card--horizontalHalfHeight .card__content h3::before { background-color: #3c4247;}
+     .card--white::after {background-color: #3c4247;}
+     .card--white.card--no_image.card--no_placeholder:not(.card--no_description):after{background-color: #3c4247 !important;}
+     .card--white .h3, .card--white .user-content h2, .card--white h3, .user-content .card--white h2{color:#3c4247 !important;}
+          
+     /* Pink cards */
+     .card--pink .card__content, .card--pink .card__content H2{ background-color: #3c4247 !important;color:white !important;}
+     .card--no_image.card--pink  .card__content, a.card.card--pink.card--horizontalHalfHeight  { background-color: #3c4247; color: white !important;}
+     .card--pink.card--no_image.card--no_placeholder:not(.card--no_description) .card__content h3, a.card.card--pink.card--horizontalHalfHeight .card__content h3 { color: white !important;}
+     .card--pink.card--no_image.card--no_placeholder:not(.card--no_description)::after { background-color: #ffffff !important;}
+     .card--pink:after,.card--pink::after {background-color: #ffffff !important;}
+     .card--pink .h3, .card--pink .user-content h2, .card--pink h3, .user-content .card--pink h2{color:#ffffff !important;}
+     
+     /* Accordion */
+     .accordion__title, .accordion__title:before{color:#3c4247 !important;} 
+     .accordion__title:hover{color:#000 !important;}
+     
+     /* Notification element */
+     .notice{background:#3c4247 !important;max-width:100% !important;}
+     .notice .btn, .notice button{color: #3c4247 !important;}
+     .notice .btn:focus, .notice .btn:hover, .notice button:focus, .notice button:hover{color: #3c4247 !important; background-color:#def02f !important}
+     
+     /* Button element (make black)  */
+     .btn--black {background-color: #3c4247 !important;}
+     .btn--black:hover {background-color: #000 !important;}
+     
+     /* Price Table in aanbod -> grijs (werkt alleen bij margin-bottom 48 px) */
+     .csc-space-after-48 table {background-color: #3c4247 !important;}
+     
+     /* Tab colors */
+     .nav-tab a.is-active {border-color: #3c4247 !important;}
+     .nav-tab a:hover {border-color: #3c4247 !important;}
+     
+     /* Contact elements color */
+     .hoverableBlock::after {background-color: #3c4247 !important;}
+     .cf i {color:#3c4247 !important;}
+</style>
+<script type="text/javascript">var cookieNotice = cookieNotice || {};cookieNotice.labels = {statement_short: 'This%20site%20uses%20cookies.%20By%20continuing%20to%20browse%20this%20website%2C%20or%20by%20clicking%20%22I%20agree%22%20you%20consent%20to%20the%20use%20of%20cookies.',statement_detail: 'We%20use%20cookies%20to%20increase%20the%20ease%20of%20use%20for%20our%20visitors%20and%20to%20tailor%20the%20experience%20for%20each%20individual%20user.%20By%20using%20cookies%20we%20store%20your%20preferences%20and%20measure%20user%20interaction.%20A%20cookie%20can%27t%20contain%20personal%20information%2C%20link%20a%20phone%20number%20or%20an%20e-mail%20address%2C%20thus%20cookies%20can%27t%20be%20used%20for%20unsolicited%20telemarketing%20or%20e-mail%20newsletters.',statement_expand: 'What%20are%20cookies%3F',agree: 'I%20agree',link_policy: 'Read%20more%20information%20in%20our%20cookie%20policy.',disagree: 'I%20don%27t%20agree'};cookieNotice.hitsBeforeImplicitConsent =3;cookieNotice.cookiePolicyDetailPage = '/en/cookie-policy/';cookieNotice.consentChangeCallbacks = [];</script>
+<link rel="canonical" href="https://www.tudelft.nl/en/x/xperience/courses-ticket-hours-projects/badminton/">
+
+<meta property="og:title" content="Badminton">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TU Delft">
+<meta property="og:image" content="https://d1rkab7tlqy5f1.cloudfront.net/Sport_Cultuur/Aanbod/Header%20badminton.jpg">
+<script type="text/javascript">var tx_solr_suggestUrl = '/?eID=tx_solarium_suggest&id=1';</script><link rel="apple-touch-icon" sizes="57x57" href="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/manifest.json">
+<link rel="mask-icon" href="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/typo3conf/ext/tud_styling/Resources/Public/img/mstile-144x144.png">
+<meta name="msapplication-config" content="/typo3conf/ext/tud_styling/Resources/Public/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body class="page-12620"><div class="cookieNotice cookieNotice--active" id="cookieNotice"><div class="contents"><div class="statement"><p>This site uses cookies. By continuing to browse this website, or by clicking "I agree" you consent to the use of cookies. <a href="https://www.tudelft.nl/en/cookie-policy/" class="statement_expand">What are cookies?</a></p><p class="statement_detail">We use cookies to increase the ease of use for our visitors and to tailor the experience for each individual user. By using cookies we store your preferences and measure user interaction. A cookie can't contain personal information, link a phone number or an e-mail address, thus cookies can't be used for unsolicited telemarketing or e-mail newsletters. <a href="https://www.tudelft.nl/en/cookie-policy/">Read more information in our cookie policy.</a></p></div><div class="cookieButtons"><a href="https://www.tudelft.nl/en/cookie-policy/" class="agree CookiesOK" data-cookie-consent="2">I agree</a></div></div></div>
+			<!-- Google Tag Manager -->
+			<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MPQ9BX"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-MPQ9BX');</script>
+			<!-- End Google Tag Manager -->			<script type="text/javascript">
+				/*<![CDATA[*/
+				(function() {
+					var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+					sz.src = '//siteimproveanalytics.com/js/siteanalyze_6005654.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+				})();
+				/*]]>*/
+			</script>
+
+<nav class="bg-black nav-top">
+	<button class="js-menu xs-hide">
+		<div class="patty"></div>
+	</button>
+	<div class="container no-spacing">
+		<a class="logo left" href="https://www.tudelft.nl/en/">
+			<img src="./Badminton_files/logo.svg" width="105" height="41" alt="">
+			<span class="text-hide">TU Delft</span>
+		</a>
+
+		<div class="right">
+			<div class="nav-main">
+				
+<ul><li class="nav-main__mainitem" data-priority="0"><a href="https://www.tudelft.nl/en/x/">Home</a></li><li class="nav-main__mainitem" data-priority="0"><a href="https://www.tudelft.nl/en/x/xperience/">Xperience</a><ul class="nav-main__submenu"><li><a href="https://www.tudelft.nl/en/x/xperience/courses-ticket-hours-projects/">Courses, Ticket Hours &amp; Projects</a></li><li><a href="https://www.tudelft.nl/en/x/xperience/book-a-space-for-x-members/">Book a Space (for X members)</a></li><li><a href="https://www.tudelft.nl/en/x/xperience/events/">Events</a></li></ul></li><li class="nav-main__mainitem" data-priority="0"><a href="https://www.tudelft.nl/en/x/xplore/">Xplore</a><ul class="nav-main__submenu"><li><a href="https://www.tudelft.nl/en/x/xplore/contemplation-room/">Contemplation room</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/playground/">Playground</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/concept-store-the-first-story/">Concept Store The First Story</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/cafe-x/">Cafe X</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/actlab/">ACTlab</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/boost/">Boost</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/campus-farm/">Campus Farm</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/freetown/">Freetown</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/open-studio-fine-arts/">Open Studio: Fine Arts</a></li></ul></li><li class="nav-main__mainitem" data-priority="0"><a href="https://www.tudelft.nl/en/x/rent-our-venue/">Rent Our Venue</a><ul class="nav-main__submenu"><li><a href="https://www.tudelft.nl/en/x/rent-our-venue/spaces-rates/">Spaces &amp; Rates</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/cafe-x/catering/">Catering</a></li><li><a href="https://www.tudelft.nl/en/x/rent-our-venue/workshops-events/">Workshops &amp; Events</a></li></ul></li><li class="nav-main__mainitem" data-priority="0"><a href="https://www.tudelft.nl/en/x/about-x/">About X</a><ul class="nav-main__submenu"><li><a href="https://www.tudelft.nl/en/x/about-x/working-at-x/">Working at X</a></li><li><a href="https://www.tudelft.nl/en/x/about-x/contact/">Contact</a></li><li><a href="https://www.tudelft.nl/en/x/about-x/house-rules/">House Rules</a></li><li><a href="https://www.tudelft.nl/en/x/about-x/elite-sports/">Elite sports</a></li></ul></li><li class="nav-main__mainitem" data-priority="9"><a href="https://www.tudelft.nl/x/xperience/cursussen-ticketuren-projecten/badminton/" title="Nederlands">Nederlands</a></li></ul><button class="button-reset btn--icon i-more js-toggle" data-target=".nav-overlay" style="display: none;"></button>
+
+				<button data-target=".nav-search" class="button-reset btn--icon i-search js-modal">
+					<span class="text-hide">Search</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<nav class="nav-overlay">
+	<div class="container no-spacing">
+		<ul class="list-reset nav-overlay__container"><li data-priority="0"><div class="nav-overlay__mainitem"><a href="https://www.tudelft.nl/en/x/">Home</a></div></li><li class="is-active" data-priority="0">						<div class="nav-overlay__mainitem row">
+							<div class="sm-12"><a href="https://www.tudelft.nl/en/x/xperience/">Xperience</a>					<a href="https://www.tudelft.nl/en/x/xperience/courses-ticket-hours-projects/badminton/#" data-altlabel="Menu openen" class="nav-overlay__toggle">
+						Menu sluiten
+					</a>								</div>
+							</div><ul class="list-reset row nav-overlay__subitemcontainer"><li class="sm-12"><a href="https://www.tudelft.nl/en/x/xperience/courses-ticket-hours-projects/" class="nav-overlay__subitem">Courses, Ticket Hours &amp; Projects</a></li><li class="sm-12"><a href="https://www.tudelft.nl/en/x/xperience/book-a-space-for-x-members/" class="nav-overlay__subitem">Book a Space (for X members)</a></li><li class="sm-12"><a href="https://www.tudelft.nl/en/x/xperience/events/" class="nav-overlay__subitem">Events</a></li></ul></li><li data-priority="0">						<div class="nav-overlay__mainitem row">
+							<div class="sm-12"><a href="https://www.tudelft.nl/en/x/xplore/">Xplore</a>							<a href="https://www.tudelft.nl/en/x/xperience/courses-ticket-hours-projects/badminton/#" data-altlabel="Menu sluiten" class="nav-overlay__toggle">
+								Menu openen
+							</a>								</div>
+							</div><ul class="list-reset row nav-overlay__subitemcontainer"><li class="sm-12"><a href="https://www.tudelft.nl/en/x/xplore/contemplation-room/" class="nav-overlay__subitem">Contemplation room</a></li><li class="sm-12"><a href="https://www.tudelft.nl/en/x/xplore/playground/" class="nav-overlay__subitem">Playground</a></li><li class="sm-12"><a href="https://www.tudelft.nl/en/x/xplore/concept-store-the-first-story/" class="nav-overlay__subitem">Concept Store The First Story</a></li><li class="sm-12"><a href="https://www.tudelft.nl/en/x/xplore/cafe-x/" class="nav-overlay__subitem">Cafe X</a></li><li class="sm-12"><a href="https://www.tudelft.nl/en/x/xplore/actlab/" class="nav-overlay__subitem">ACTlab</a></li><li class="sm-12"><a href="https://www.tudelft.nl/en/x/xplore/boost/" class="nav-overlay__subitem">Boost</a></li><li class="sm-12"><a href="https://www.tudelft.nl/en/x/xplore/campus-farm/" class="nav-overlay__subitem">Campus Farm</a></li><li class="sm-12"><a href="https://www.tudelft.nl/en/x/xplore/freetown/" class="nav-overlay__subitem">Freetown</a></li><li class="sm-12"><a href="https://www.tudelft.nl/en/x/xplore/open-studio-fine-arts/" class="nav-overlay__subitem">Open Studio: Fine Arts</a></li></ul></li><li data-priority="0">						<div class="nav-overlay__mainitem row">
+							<div class="sm-12"><a href="https://www.tudelft.nl/en/x/rent-our-venue/">Rent Our Venue</a>							<a href="https://www.tudelft.nl/en/x/xperience/courses-ticket-hours-projects/badminton/#" data-altlabel="Menu sluiten" class="nav-overlay__toggle">
+								Menu openen
+							</a>								</div>
+							</div><ul class="list-reset row nav-overlay__subitemcontainer"><li class="sm-12"><a href="https://www.tudelft.nl/en/x/rent-our-venue/spaces-rates/" class="nav-overlay__subitem">Spaces &amp; Rates</a></li><li class="sm-12"><a href="https://www.tudelft.nl/en/x/xplore/cafe-x/catering/" class="nav-overlay__subitem">Catering</a></li><li class="sm-12"><a href="https://www.tudelft.nl/en/x/rent-our-venue/workshops-events/" class="nav-overlay__subitem">Workshops &amp; Events</a></li></ul></li><li data-priority="0">						<div class="nav-overlay__mainitem row">
+							<div class="sm-12"><a href="https://www.tudelft.nl/en/x/about-x/">About X</a>							<a href="https://www.tudelft.nl/en/x/xperience/courses-ticket-hours-projects/badminton/#" data-altlabel="Menu sluiten" class="nav-overlay__toggle">
+								Menu openen
+							</a>								</div>
+							</div><ul class="list-reset row nav-overlay__subitemcontainer"><li class="sm-12"><a href="https://www.tudelft.nl/en/x/about-x/working-at-x/" class="nav-overlay__subitem">Working at X</a></li><li class="sm-12"><a href="https://www.tudelft.nl/en/x/about-x/contact/" class="nav-overlay__subitem">Contact</a></li><li class="sm-12"><a href="https://www.tudelft.nl/en/x/about-x/house-rules/" class="nav-overlay__subitem">House Rules</a></li><li class="sm-12"><a href="https://www.tudelft.nl/en/x/about-x/elite-sports/" class="nav-overlay__subitem">Elite sports</a></li></ul></li><div id="c97233" class="t3ce">
+
+	
+		
+				<a href="https://www.facebook.com/x.tudelft" target="_blank" class="btn--icon i-facebook">
+					<span class="text-hide">facebook</span>
+				</a>
+			
+	
+		
+				<a href="https://www.instagram.com/x.tudelft/" target="_blank" class="btn--icon i-instagram">
+					<span class="text-hide">instagram</span>
+				</a>
+			
+	
+		
+				<a href="https://api.whatsapp.com/send?phone=31682768913" target="_blank" class="btn--icon i-whatsapp hide-for-xxlarge" title="+31 6 82 76 89 13">
+					<span class="text-hide">whatsapp</span>
+				</a>
+				
+					<span class="text-hide">whatsapp</span>
+				
+			
+	
+
+</div></ul>
+		<div class="language-switch"><a href="https://www.tudelft.nl/x/xperience/cursussen-ticketuren-projecten/badminton/" title="Nederlands">Nederlands</a></div>
+		<button class="menu menu--close button-reset js-toggle" data-target=".nav-overlay">
+			<div class="i-close">
+				<span class="text-hide">
+					Close menu
+				</span>
+			</div>
+		</button>
+	</div>
+</nav>
+
+
+<div class="modal">
+	<div class="modal__content">
+		
+	<form action="https://www.tudelft.nl/en/x/search/" method="get" class="nav-search" style="display: none;">
+		<input type="search" name="q" value="" class="autocomplete-inputField" autocomplete="off">
+		<button class="button-reset i-search"></button>
+	</form>
+
+	</div>
+	<button data-target="this.parent" class="menu menu--close button-reset js-modal-close">
+		<div class="i-close">
+			<span class="text-hide">Sluit menu</span>
+		</div>
+	</button>
+</div>
+
+
+
+
+<a id="c128837"></a><div id="c128836" class="t3ce">
+
+<div class="carousel">
+	
+			<div class="carousel__slides slick-initialized slick-slider">
+				
+					
+		
+				
+					
+		
+				<div aria-live="polite" class="slick-list draggable" style="height: 422px;"><div class="slick-track" style="opacity: 1; width: 1440px; transform: translate3d(0px, 0px, 0px);" role="listbox"><div class="poster poster--carousel poster-header-carousel poster-header-carousel--895 poster-color-content--white  is-loading is-loaded slick-slide slick-current slick-active" data-color="white" data-src-lg="https://d1rkab7tlqy5f1.cloudfront.net/_processed_/d/9/csm_Header%20badminton_f0036a0f29.jpg" data-src-md="https://d1rkab7tlqy5f1.cloudfront.net/_processed_/d/9/csm_Header%20badminton_4afe1c5bc5.jpg" data-src-sm="https://d1rkab7tlqy5f1.cloudfront.net/_processed_/d/9/csm_Header%20badminton_ae5e656db1.jpg" data-src-xs="https://d1rkab7tlqy5f1.cloudfront.net/_processed_/d/9/csm_Header%20badminton_5cfe7694af.jpg" data-slick-index="0" style="background-image: url(&quot;https://d1rkab7tlqy5f1.cloudfront.net/_processed_/d/9/csm_Header%20badminton_f0036a0f29.jpg&quot;); width: 1440px;" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00">
+
+					
+		<div class="container no-spacing">
+			<div class="poster__content">
+				<div class="content-container ">
+					<h1>Badminton</h1>
+				</div>
+				
+			</div>
+		</div>
+		
+	
+				</div></div></div>
+			
+	
+				
+			
+	
+				
+			</div>
+			<div class="container no-spacing">
+				<div class="carousel__arrowcontainer"></div>
+				
+			</div>
+		
+</div>
+
+	
+
+	
+
+	
+
+</div>
+
+
+	<main class="content__full-width">
+		<div class="container">
+			<nav class="breadcrumb"><ul class="list-inline"><li><a href="https://www.tudelft.nl/en/x/" title="X">X</a></li><li><a href="https://www.tudelft.nl/en/x/xperience/" title="Xperience">Xperience</a></li><li><a href="https://www.tudelft.nl/en/x/xperience/courses-ticket-hours-projects/" title="Courses, Ticket Hours &amp; Projects">Courses, Ticket Hours &amp; Projects</a></li><li><a href="https://www.tudelft.nl/en/x/xperience/courses-ticket-hours-projects/badminton/" title="Badminton">Badminton</a></li></ul></nav>
+			<!--TYPO3SEARCH_begin-->
+			<a id="c128333"></a><div id="c128326" class="t3ce"><p class="bodytext"><strong>Badminton is an Olympic sport that you play with a racket and a shuttlecock. It’s hugely popular in Asia, and even though it’s slightly less popular in Europe, it’s definitely a growing sport. Badminton is a very fast and explosive sport. In singles games, you can easily cover more than five kilometres per match, and smashes can reach speeds of more than 300 kilometres per hour.&nbsp;</strong></p></div><a id="c349876"></a><div id="c349871" class="t3ce">
+
+<div class="js-navTabsContainer">
+    <nav class="nav-tab">
+        <ul class="list-reset">
+            
+                <li>
+                    <a class="is-active" href="https://www.tudelft.nl/en/x/xperience/courses-ticket-hours-projects/badminton/#">Group course – all levels</a>
+                </li>
+            
+            
+                <li>
+                    <a href="https://www.tudelft.nl/en/x/xperience/courses-ticket-hours-projects/badminton/#">Unsupervised practice – all levels</a>
+                </li>
+            
+            
+                <li>
+                    <a href="https://www.tudelft.nl/en/x/xperience/courses-ticket-hours-projects/badminton/#">Association training - all levels</a>
+                </li>
+            
+            
+            
+            
+            
+        </ul>
+    </nav>
+    
+        <section id="tab_target" class="is-active">
+            
+                <div id="c349877" class="t3ce"></div><div id="c349878" class="t3ce"><div id="c128311" class="t3ce"><div data-namespace-typo3-fluid="true">
+    
+    
+        <div class="row grid layout-0">
+            <div class="sm-12 md-8">
+                
+                    <a id="c128299"></a><div id="c128272" class="t3ce"><p class="bodytext">During the course you learn the basic skills and rules of badminton. Badminton is a very technical sport. You learn the basic postures, the footwork, and how to hold you racket. Furthermore, you get started with the different techniques, like the service, clear, drop shot, lob and smash. Also, you learn about the rules.&nbsp;</p></div><a id="c185547"></a><div id="c185539" class="t3ce csc-space-before-40"><div>
+    
+        <div class="row grid layout-0">
+            <div class="sm-12">
+                
+                    <a id="c185545"></a><div id="c185540" class="t3ce"><div class="csc-header csc-header-n1"><h2 class="csc-firstHeader  mg-heading">Schedule &amp; enrolment</h2></div></div><a id="c185546"></a><div id="c185541" class="t3ce"><script src="./Badminton_files/iframeResizer.min.js"></script> <style>iframe{width: 1px;min-width: 100%;border:none;}</style> <iframe id="A936451" src="./Badminton_files/content-page.html" onload="iFrameResize({log:false}, &#39;#A936451&#39;)" scrolling="no" style="overflow: hidden; height: 178px;"></iframe></div>
+                
+            </div>
+        </div>
+    
+</div></div><a id="c138085"></a><div id="c138080" class="t3ce"><div>
+    
+        <div class="row grid layout-0">
+            <div class="sm-12">
+                
+                    <a id="c138081"></a><div id="c138076" class="t3ce csc-space-before-20 csc-space-after-40"><div class="csc-header csc-header-n1"><h2 class="csc-firstHeader  mg-heading">Teacher</h2></div></div><a id="c138084"></a><div id="c138079" class="t3ce"><div data-namespace-typo3-fluid="true">
+    
+    
+        <div class="row grid layout-0">
+            <div class="xs-12 sm-6 md-4">
+                
+                    <a id="c138083"></a><div id="c138078" class="t3ce">
+
+<div class="profile theme-blue hoverableBlock hoverableBlock--blue ">
+    
+            
+                    
+                            <div class="hoverableBlock-imageWrap">
+                                
+    
+        
+            <img class="hoverableBlock-image" src="./Badminton_files/csm_Badminton - Marcel Daas_9e1a8f09fa.jpg" width="301" height="301" alt="">
+        
+        
+        
+        
+    
+
+                            </div>
+                        
+                
+        
+
+    <div class="box">
+        
+
+        
+                
+                    
+	
+		
+				<h3>Marcel Daas</h3>
+			
+	
+
+                
+            
+
+        <ul class="profile__contactdata">
+            
+                    
+                    
+                    
+                    
+                    
+                
+        </ul>
+
+        
+            <p class="bodytext"> Besides his certificates as dive instructor and swimming trainer, Martin  obtained his SL3 Badminton trainers certificate. Since then he has  works as a trainer for various badminton clubs and schools, teaching all  levels and ages.</p>
+        
+
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                
+            </div>
+            <div class="xs-12 sm-6 md-8">
+                
+                    
+                
+            </div>
+        </div>
+    
+    
+</div></div>
+                
+            </div>
+        </div>
+    
+</div></div>
+                
+            </div>
+            <div class="sm-12 md-4">
+                
+                    <a id="c361012"></a><div id="c361011" class="t3ce csc-space-after-48">
+	<div class="notice notice--">
+		
+			<h2>Rates</h2>
+		
+		<table style="; " class="contenttable"><tbody><tr><td>TU Delft Student<br>TU Delft Employee<br>Other</td><td>€ 23.00<br>€ 41.00<br>€ 45.50</td></tr><tr><td colspan="2" rowspan="1"><p class="bodytext">You don’t need an X subscription&nbsp;to join this course.&nbsp;</p></td></tr></tbody></table>
+		
+	</div>
+</div><a id="c128309"></a><div id="c128282" class="t3ce csc-space-after-48">
+	<div class="notice notice--">
+		
+			<h2>Practical Information</h2>
+		
+		<table style=";" class="contenttable"><tbody><tr><td>All levels</td></tr><tr><td rowspan="1">Group course</td></tr><tr><td colspan="2" rowspan="1">7 lessons</td></tr><tr><td colspan="2" rowspan="1">Each lesson is 60 minutes</td></tr><tr><td colspan="2" rowspan="1"><p class="bodytext">Wear comfortable sports clothes and indoor shoes. You can either bring your own racket and shuttlecocks or rent them at the sports desk.</p></td></tr></tbody></table>
+		
+	</div>
+</div>
+                
+            </div>
+        </div>
+    
+    
+</div></div></div>
+            
+        </section>
+    
+    
+        <section>
+            
+                <div id="c349879" class="t3ce"></div><div id="c349880" class="t3ce"><div id="c128324" class="t3ce"><div data-namespace-typo3-fluid="true">
+    
+    
+        <div class="row grid layout-0">
+            <div class="xs-12 sm-6 md-8">
+                
+                    <a id="c128312"></a><div id="c128285" class="t3ce"><p class="bodytext">During the facility open hours , you can come to play badminton without a coach or trainer. Bring your friends or meet other badminton enthusiasts. Play a game or practise your footwork and technique.&nbsp;</p></div>
+                
+            </div>
+            <div class="xs-12 sm-6 md-4">
+                
+                    <a id="c467956"></a><div id="c467955" class="t3ce">
+	<div class="notice notice--black">
+		
+			<h2>Rates</h2>
+		
+		<p class="bodytext">In order to practice without supervision you need an X-subscription.</p>
+		
+			<a href="https://www.tudelft.nl/en/x/subscriptions-and-rates/" class="btn">
+				Check the rates
+			</a>
+		
+	</div>
+</div><a id="c467959"></a><div id="c467960" class="t3ce"><p class="bodytext"><br><br></p></div><a id="c128343"></a><div id="c128342" class="t3ce csc-space-after-48"><table style="padding: 1.46rem; color: rgb(255, 255, 255); display: block; background-color: rgb(30, 97, 136); " class="contenttable"><tbody><tr><td><h3>Practical information</h3></td></tr><tr><td>All levels</td></tr><tr><td rowspan="1">&nbsp;</td></tr><tr><td rowspan="1">Unsupervised practice</td></tr><tr><td rowspan="1">&nbsp;</td></tr><tr><td colspan="2" rowspan="1"><p class="bodytext"><span lang="EN-US">Wear comfortable sports clothes and indoor shoes. You can either bring your own racket and shuttlecocks or rent them at the sports desk.</span></p></td></tr></tbody></table></div>
+                
+            </div>
+        </div>
+    
+    
+</div></div></div>
+            
+        </section>
+    
+    
+        <section>
+            
+                <div id="c352417" class="t3ce"></div><div id="c352418" class="t3ce"><div id="c352410" class="t3ce"><div data-namespace-typo3-fluid="true">
+    
+    
+        <div class="row grid layout-0">
+            <div class="sm-12 md-8">
+                
+                    <div id="c352412" class="t3ce"><p class="bodytext">In addition to a group course or self-practice, you can also join the <a href="https://unitedshuttles.nl/" target="_blank">Delft Student Badminton Association ‘United Shuttles Smashing Right’</a>&nbsp;(DSBA-USSR). The DSBA-USSR trains at X and competes in regional and national competitions. For more information regarding try-outs and becoming a member, please visit the <a href="https://unitedshuttles.nl/" target="_blank">DSBA-USSR</a> website.</p></div><div id="c352414" class="t3ce csc-space-before-20 csc-space-after-40"><div class="csc-header csc-header-n2"><h3 class="mg-heading">Association</h3></div></div><div id="c352415" class="t3ce"><div data-namespace-typo3-fluid="true">
+    
+    
+        <div class="row grid layout-0">
+            <div class="xs-12 sm-6 lg-4">
+                
+                    <div id="c352416" class="t3ce">
+
+<div class="profile theme-blue hoverableBlock hoverableBlock--black hoverableBlock--hasLink">
+    
+            
+                    <a href="https://www.unitedshuttles.nl/" target="_blank" class="hoverableBlock-imageWrap">
+                        
+    
+        
+            <img class="hoverableBlock-image" src="./Badminton_files/csm_DSBA-USSR Logo 2018_a064c47867.jpg" width="301" height="301" alt="">
+        
+        
+        
+        
+    
+
+                    </a>
+                
+        
+
+    <div class="box">
+        
+
+        
+                
+                    
+	
+		
+				<h3>USSR Student Badminton Club</h3>
+			
+	
+
+                
+            
+
+        <ul class="profile__contactdata">
+            
+                    
+                    
+                    
+                        
+    <li class="cf">
+        <i class="i-mail"></i>
+        <a href="mailto:unitedshuttles@gmail.com">unitedshuttles@gmail.com</a>
+    </li>
+
+                    
+                    
+                        
+    <li class="cf">
+        <i class="i-website"></i>
+        <a href="https://www.unitedshuttles.nl/">
+            https://www.unitedshuttles.nl
+        </a>
+    </li>
+
+                    
+                    
+                
+        </ul>
+
+        
+            <p class="bodytext"><br> </p>
+        
+
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                
+            </div>
+            <div class="xs-12 sm-6 lg-4">
+                
+                    
+                
+            </div>
+            <div class="xs-12 sm-6 lg-4">
+                
+                    
+                
+            </div>
+        </div>
+    
+    
+</div></div>
+                
+            </div>
+            <div class="sm-12 md-4">
+                
+                    <div id="c352413" class="t3ce"><div id="c351479" class="t3ce">
+	<div class="notice notice--">
+		
+			<h2>Rates</h2>
+		
+		<p class="bodytext">You need a valid X subscription and association membership to participate.</p>
+		
+			<a href="https://www.tudelft.nl/en/x/subscriptions-and-rates/" class="btn">
+				Check the rates
+			</a>
+		
+	</div>
+</div></div>
+                
+            </div>
+        </div>
+    
+    
+</div></div></div>
+            
+        </section>
+    
+    
+    
+    
+    
+</div>
+
+</div><div id="c162953" class="t3ce"><div id="c162843" class="t3ce"><style>
+.card--no_image{background-image:none;}
+.nav-tab:first-of-type {margin: 0px;}
+#pricing-text a:link, #pricing-text a:visited{ color: white; }
+</style></div></div><div id="c189802" class="t3ce"><div id="c185465" class="t3ce"><script src="./Badminton_files/iframeResizer.min.js"></script>
+<style>
+</style></div></div>
+			<!--TYPO3SEARCH_end-->
+		</div>
+		
+	</main>
+
+
+<footer class="pageFooter">
+	<a class="js-back_to_top up" href="https://www.tudelft.nl/en/x/xperience/courses-ticket-hours-projects/badminton/#" title="back_to_top">
+		<div class="btn--icon i-arrow_down"></div>
+	</a>
+	<div class="container">
+		<div class="row">
+			<div class="md-6 lg-6 space">
+				<div id="c97232" class="t3ce"><div class="csc-header csc-header-n1"><h1 class="csc-firstHeader  mg-heading">X</h1></div></div><div id="c97233" class="t3ce">
+
+	
+		
+				<a href="https://www.facebook.com/x.tudelft" target="_blank" class="btn--icon i-facebook">
+					<span class="text-hide">facebook</span>
+				</a>
+			
+	
+		
+				<a href="https://www.instagram.com/x.tudelft/" target="_blank" class="btn--icon i-instagram">
+					<span class="text-hide">instagram</span>
+				</a>
+			
+	
+		
+				<a href="https://api.whatsapp.com/send?phone=31682768913" target="_blank" class="btn--icon i-whatsapp" title="+31 6 82 76 89 13">
+					<span class="text-hide">whatsapp</span>
+				</a>
+				
+					<span class="text-hide">whatsapp</span>
+				
+			
+	
+
+</div><div id="c97234" class="t3ce"><table class="contenttable"><tbody><tr><td rowspan="1" style="vertical-align: top;"></td><td rowspan="1"></td></tr><tr><td style="vertical-align: top;"><em class="i-map"></em></td><td>Mekelweg 8-10<br>2628 CD Delft</td></tr><tr><td><em class="i-phone"></em></td><td>+31 15 278 24 42</td></tr><tr><td><em class="i-mail"></em></td><td><a href="mailto:hosts-x@tudelft.nl">hosts-x@tudelft.nl</a></td></tr></tbody></table></div>
+			</div>
+			<div class="md-6 lg-6">
+				<div class="row">
+					<div class="sm-6">
+						<div id="c319020" class="t3ce"><p class="bodytext"><br><br><a href="https://www.tudelft.nl/en/x/about-x/">Organization</a><br><a href="https://www.tudelft.nl/en/x/about-x/privacy-statement/">Privacy statement</a><br><a href="https://www.tudelft.nl/en/x/about-x/opening-hours/">Opening hours</a><br><a href="https://www.tudelft.nl/en/x/about-x/house-rules/">General conditions</a><br><a href="https://www.tudelft.nl/en/x/about-x/working-at-x/">Work at X</a><br><a href="https://www.tudelft.nl/en/x/about-x/contact/">Contact</a></p></div>
+					</div>
+					<div class="sm-6 right">
+						<div id="c97239" class="t3ce"><h3>Newsletter</h3>
+<p>Receive the monthly newsletter in your inbox? Subscribe here!</p>
+<iframe src="./Badminton_files/wpH4ZbZQVsfD-1064-3100289.html" frameborder="0" height="200px"></iframe>
+<style>
+   .submitButton {background-color: #ECFF4F !important;}
+</style>
+
+<script src="./Badminton_files/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $( "div#c97233 a:last" ).removeClass( "hide-for-xxlarge" );
+$("#c97233 a.i-whatsapp").prop('title', '+31 6 82 76 89 13');
+});
+</script></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+<nav class="nav-bottom">
+	<div class="container no-spacing">
+		<a class="logo left" href="https://www.tudelft.nl/en/">
+			<img src="./Badminton_files/logo.svg" width="54" height="22" alt="">
+		</a>
+
+		<div class="right">
+			<div class="nav-main">
+				
+<ul><li class="nav-main__mainitem" data-priority="0"><a href="https://www.tudelft.nl/en/x/">Home</a></li><li class="nav-main__mainitem" data-priority="0"><a href="https://www.tudelft.nl/en/x/xperience/">Xperience</a><ul class="nav-main__submenu"><li><a href="https://www.tudelft.nl/en/x/xperience/courses-ticket-hours-projects/">Courses, Ticket Hours &amp; Projects</a></li><li><a href="https://www.tudelft.nl/en/x/xperience/book-a-space-for-x-members/">Book a Space (for X members)</a></li><li><a href="https://www.tudelft.nl/en/x/xperience/events/">Events</a></li></ul></li><li class="nav-main__mainitem" data-priority="0"><a href="https://www.tudelft.nl/en/x/xplore/">Xplore</a><ul class="nav-main__submenu"><li><a href="https://www.tudelft.nl/en/x/xplore/contemplation-room/">Contemplation room</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/playground/">Playground</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/concept-store-the-first-story/">Concept Store The First Story</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/cafe-x/">Cafe X</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/actlab/">ACTlab</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/boost/">Boost</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/campus-farm/">Campus Farm</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/freetown/">Freetown</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/open-studio-fine-arts/">Open Studio: Fine Arts</a></li></ul></li><li class="nav-main__mainitem" data-priority="0"><a href="https://www.tudelft.nl/en/x/rent-our-venue/">Rent Our Venue</a><ul class="nav-main__submenu"><li><a href="https://www.tudelft.nl/en/x/rent-our-venue/spaces-rates/">Spaces &amp; Rates</a></li><li><a href="https://www.tudelft.nl/en/x/xplore/cafe-x/catering/">Catering</a></li><li><a href="https://www.tudelft.nl/en/x/rent-our-venue/workshops-events/">Workshops &amp; Events</a></li></ul></li><li class="nav-main__mainitem" data-priority="0"><a href="https://www.tudelft.nl/en/x/about-x/">About X</a><ul class="nav-main__submenu"><li><a href="https://www.tudelft.nl/en/x/about-x/working-at-x/">Working at X</a></li><li><a href="https://www.tudelft.nl/en/x/about-x/contact/">Contact</a></li><li><a href="https://www.tudelft.nl/en/x/about-x/house-rules/">House Rules</a></li><li><a href="https://www.tudelft.nl/en/x/about-x/elite-sports/">Elite sports</a></li></ul></li><li class="nav-main__mainitem" data-priority="9"><a href="https://www.tudelft.nl/x/xperience/cursussen-ticketuren-projecten/badminton/" title="Nederlands">Nederlands</a></li></ul><button class="button-reset btn--icon i-more js-toggle" data-target=".nav-overlay" style="display: none;"></button>
+
+				<button data-target=".nav-search" class="button-reset btn--icon i-search js-modal">
+					<span class="text-hide">Search</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<script src="./Badminton_files/dist.javascripts.d29c5244b6.min.js" type="text/javascript"></script>
+
+
+
+</body></html>

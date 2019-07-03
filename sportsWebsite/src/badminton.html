@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/src/practise.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+    <script src="/src/index.js"></script>
+</head>
+<body >
+    <div class="bracket-game">
+        <div class="player top win">
+            Snute
+        </div>
+        <div class="player bot loss">
+            TLO
+        </div>
+    </div>
+    <div class="connectors r-of-2">
+        <div class="top-line"></div>
+        <div class="clear"></div>
+        <div class="bottom-line"></div>
+        <div class="clear"></div>
+        <div class="vert-line"></div>
+        <div class="clear"></div>
+        <div class="next-line"></div>
+        <div class="clear"></div>
+    </div>
+    <input type="text" />
+
+</body>
+<script>
+    var entrylimit=16;
+var amount_of_rounds = Math.log(entrylimit) / Math.log(2);
+for(i=amount_of_rounds; i>0; i--)
+{
+  s = 'Round '+(amount_of_rounds-i+1)+' of '+amount_of_rounds+' consist of '+Math.pow(2, i-1)+' matches';
+  alert(s);
+}
+</script>
+</html>

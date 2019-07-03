@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/src/sprorts.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+    
+</head>
+<body >
+    <header>
+        <div class="container">
+        <h1 class="logo"></h1>
+        <img src="../images/images.png" alt="logo" class="logo">
+        <nav>
+            <div class="dropdown">
+                    <button class="dropbtn">Sports 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                            <div class="header">
+                                    <h2>Mega Menu</h2>
+                                  </div>   
+                                  <div class="row">
+                                    <div class="column">
+                                    <h3>Sports</h3>
+                                    <ul>
+                                        <li><input name="sports" type="radio" value=""/>Badminton</li>
+                                        <li><input name="sports" type="radio" value=""/>Table Tennis</li>
+                                        <li><input name="sports" type="radio" value=""/>Soccer</li>
+                                    </ul>
+                                    </div>
+                                    <div class="column">
+                                      <h3>Game type</h3>
+                                      <ul>
+                                            <li ><input name="gameType" type="radio" value=""/>Knock Out</li>
+                                            <li ><input name="gameType" type="radio" value=""/>League</li>
+                                        </ul>
+                                    </div>
+                                    <div class="column">
+                                      <h3>Team/Players</h3>
+<!------------------------------------------------------------------------------->
+                                      <div>
+                                            <label for="number_participants">
+                                                Number of Participants
+                                            </label>
+                                            <select id="select_drop" name="number_participants" onchange="handle_dropdown()">
+                                                <option value="4">4</option>
+                                                
+                                                <option value="8">8</option>
+                                                
+                                                <option value="16">16</option>
+                                                
+                                                <option value="32">32</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                         
+
+                        </div>
+                    </div>
+            </nav>
+        </div>
+    </header>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="../images/img.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="../images/TT.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="../images/1football.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+            
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+    <div id="player_drop_down_container">
+        
+    </div>
+          
+
+</body>
+
+<script src="./index.js"></script>
+</html>
+<!-- https://www.youtube.com/watch?v=wy3A2BPClOg -->
